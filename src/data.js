@@ -36,7 +36,7 @@ export const blogposts = [
         title: '5 Things I Wish I Knew Before Quitting My Job to Get a CS Degree',
         description: 'A beginning tale of my journey to change careers and some advice for others in the same position',
         image: '../images/blogpost1-cover-image.png',
-        link: 'https://jocular-granita-cad13b.netlify.app/blogpost1'
+        link: '/blogpost1'
     }
 ]
 
