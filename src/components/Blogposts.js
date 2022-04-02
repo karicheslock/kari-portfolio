@@ -13,7 +13,7 @@ export default function Blogposts() {
         </h1>
         <div className="flex flex-wrap m-4">
           {blogposts.map((blogpost) => (
-            <div className="p-4 md:w-1/2 w-full">
+            <div key={blogpost.title} className="p-4 md:w-1/2 w-full">
               <div className="h-full bg-gray-800 bg-opacity-40 p-8 rounded">
                 <TerminalIcon className="block w-8 text-gray-500 mb-4" />
                   <Link to={`${blogpost.link}`} target='_blank'>

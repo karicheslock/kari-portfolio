@@ -1,43 +1,24 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 export default function Contact() {
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
-
-    function encode(data) {
-        return Object.keys(data)
-            .map(
-                (key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key])
-            )
-            .join('&');
-    }
-
-    function handleSubmit(e) {
+    
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        fetch('/', {
+        const { name, email, message } = e.target.elements;
+        let details = {
+            name: name.value,
+            email: email.value,
+            message: message.value,
+        };
+        let response = await fetch('http://localhost:5000/contact', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/x-www-form-urlencoded'},
-            body: encode({ 'form-name': 'contact', name, email, message }),
+            headers: { 'Content-Type': 'application/json;charset=utf-8'},
+            body: JSON.stringify(details),
         })
-            .then(() => alert('Message sent!'))
-            .catch((error) => alert(error));
-        setName('');
-        setEmail('');
-        setMessage('');
+        let result = await response.json()
+        alert(result.status)
     }
 
-    function handleNameChange(e) {
-        setName(e.target.value);
-    }
-
-    function handleEmailChange(e) {
-        setEmail(e.target.value);
-    }
-
-    function handleMessageChange(e) {
-        setMessage(e.target.value);
-    }
 
     return (
         <section id='contact' className='relative'>
@@ -81,7 +62,7 @@ export default function Contact() {
                     </div>
                 </div>
                 <form
-                    netlify
+                    netlify='true'
                     name='contact'
                     onSubmit={handleSubmit}
                     className='lg:w-2/5 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0'
@@ -100,8 +81,7 @@ export default function Contact() {
                             type='text'
                             id='name'
                             name='name'
-                            className='w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out'
-                            onChange={handleNameChange}
+                            className='w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out'                         
                         />
                     </div>
                     <div className='relative mb-4'>
@@ -113,7 +93,6 @@ export default function Contact() {
                             id='email'
                             name='email'
                             className='w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out'
-                            onChange={handleEmailChange}
                         /> 
                     </div>
                     <div className='relative mb=4'>
@@ -124,7 +103,6 @@ export default function Contact() {
                             id='message'
                             name='message'
                             className='w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out'
-                            onChange={handleMessageChange}
                         />
                     </div>
                     <button

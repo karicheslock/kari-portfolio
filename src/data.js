@@ -28,7 +28,9 @@ export const skills = [
     'JavaScript',
     'React',
     'Firebase',
-    'Node.js'
+    'Node.js',
+    'Express',
+    'MongoDB'
 ]
 
 export const blogposts = [
