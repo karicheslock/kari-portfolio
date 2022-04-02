@@ -22,6 +22,9 @@ export default function Contact() {
         })
             .then(() => alert('Message sent!'))
             .catch((error) => alert(error));
+        setName('');
+        setEmail('');
+        setMessage('');
     }
 
     function handleNameChange(e) {
