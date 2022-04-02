@@ -1,22 +1,22 @@
 import React from 'react';
+import emailjs from 'emailjs-com';
+import {init} from '@emailjs/browser';
+init('Mbwt4vW-MzWmgu5fi');
+
+const SERVICE_ID = 'service_8n5sjy9';
+const TEMPLATE_ID = 'template_2f814ki';
+const USER_ID = 'Mbwt4vW-MzWmgu5fi';
 
 export default function Contact() {
     
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const { name, email, message } = e.target.elements;
-        let details = {
-            name: name.value,
-            email: email.value,
-            message: message.value,
-        };
-        let response = await fetch('http://localhost:5000/contact', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json;charset=utf-8'},
-            body: JSON.stringify(details),
-        })
-        let result = await response.json()
-        alert(result.status)
+        emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
+            .then((result) => {
+                console.log(result.text);
+                alert('Message sent');
+            })
+        e.target.reset();
     }
 
 
@@ -80,7 +80,7 @@ export default function Contact() {
                         <input 
                             type='text'
                             id='name'
-                            name='name'
+                            name='from_name'
                             className='w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out'                         
                         />
                     </div>
@@ -91,7 +91,7 @@ export default function Contact() {
                         <input 
                             type='email'
                             id='email'
-                            name='email'
+                            name='reply_to'
                             className='w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out'
                         /> 
                     </div>
