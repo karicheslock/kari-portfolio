@@ -7,9 +7,9 @@ export default function Skills() {
         <section id='skills'>
             <div className='container px-5 py-10 mx-auto'>
                 <div className='text-center mb-20'>
-                    <ChipIcon className='w-10 inline-block mb-4' />
+                    <ChipIcon className='w-10 inline-block mb-4 text-gray-500' />
                     <h1 className='sm:text-4xl text-3xl font-medium title-font text-white mb-4'>
-                        <span className='text-yellow-500'>Skills</span> &amp; Technologies
+                        <span className='text-violet-500'>Skills</span> &amp; Technologies
                     </h1>
                     <p className='text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto'>
                         These are just some of the skills I have to offer.  I have a Bachelor's degree in Computer Science so I have received instruction in many languages and technologies.

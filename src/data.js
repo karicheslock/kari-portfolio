@@ -43,7 +43,7 @@ export const blogposts = [
     {
         title: 'A Beginner’s Learning Path to Becoming a Web Developer',
         description: 'Some recommendations for designing a learning path for those considering a career in web development',
-        image: '../images/blogpost1-cover-image.png',
+        image: '../images/blogpost2-cover-image.png',
         link: '/blogpost2'
     }
 ]

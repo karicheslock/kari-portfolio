@@ -8,7 +8,7 @@ import Blogposts from '../components/Blogposts';
 
 function Dashboard() {
   return (
-    <main className='text-violet-300 bg-zinc-900 font-sans'>
+    <main className='text-gray-300 bg-zinc-900 font-sans'>
       <Navbar />
       <About />
       <Projects />
