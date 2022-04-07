@@ -2,6 +2,7 @@ import React from 'react';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { Link } from 'react-router-dom';
 import { CodeIcon } from '@heroicons/react/solid';
+import { TwitterIcon, TwitterShareButton } from 'react-share';
 
 export default function Blogpost2() {
     return (
@@ -15,6 +16,15 @@ export default function Blogpost2() {
                 </div>
                 <img src="../images/blogpost2-pc.jpg" alt='A laptop showing code' className="w-1/2 h-48 rounded"></img>
             </div>
+
+            <TwitterShareButton
+                title={"5 Things I Wish I Knew Before Quitting My Job to Get a CS Degree"}
+                url={'https://www.karicheslock.com/blogpost1'}
+                className='flex'
+            >
+                <TwitterIcon size={20} borderRadius={10} className='mb-6 mr-2' />
+                <p className="text-sm">Tweet this article</p>
+            </TwitterShareButton>
 
             <p className="mb-5 leading-7">
             Becoming a web developer can seem like an incredibly daunting task, especially if you are a beginner with little experience under your belt and not much in your coding toolbox other than a lot of ambition.  When I set out on this new career 

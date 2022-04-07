@@ -1,6 +1,7 @@
 import React from "react";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { Link } from 'react-router-dom';
+import { TwitterIcon, TwitterShareButton } from 'react-share';
 
 export default function Blogpost1() {
     return (
@@ -12,6 +13,16 @@ export default function Blogpost1() {
                     <div className='text-sm text-sky-700 font-bold mb-2'>By Kari Cheslock</div>
                     <div className='text-sm text-sky-700'>March 28, 2022</div>
                     <div className='text-sm text-gray-500 mb-4'>10 min read</div>
+        
+                    <TwitterShareButton
+                        title={"5 Things I Wish I Knew Before Quitting My Job to Get a CS Degree"}
+                        url={'https://www.karicheslock.com/blogpost1'}
+                        className='flex'
+                    >
+                        <TwitterIcon size={20} borderRadius={10} className='mb-4 mr-2' />
+                        <p className="text-sm">Tweet this article</p>
+                    </TwitterShareButton>
+
                 </div>
                 <img src="../images/blogpost1-computer.jpg" alt='A person typing at a computer' className="w-1/2 h-48 rounded"></img>
             </div>
