@@ -12,7 +12,7 @@ export default function Skills() {
                         <span className='text-yellow-500'>Skills</span> &amp; Technologies
                     </h1>
                     <p className='text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto'>
-                        These are just some of the skills I have to offer.  I have a Bachelor's degree in Computer Science so I am well-versed in many technologies.
+                        These are just some of the skills I have to offer.  I have a Bachelor's degree in Computer Science so I have received instruction in many languages and technologies.
                     </p>
                 </div>
                 <div className='flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2'>

@@ -39,6 +39,12 @@ export const blogposts = [
         description: 'A beginning tale of my journey to change careers and some advice for others in the same position',
         image: '../images/blogpost1-cover-image.png',
         link: '/blogpost1'
+    },
+    {
+        title: 'A Beginner’s Learning Path to Becoming a Web Developer',
+        description: 'Some recommendations for designing a learning path for those considering a career in web development',
+        image: '../images/blogpost1-cover-image.png',
+        link: '/blogpost2'
     }
 ]
 
