@@ -19,6 +19,13 @@ export const projects = [
         description: 'An app for adding posts and upvoting or downvoting them',
         image: '../images/upvote-downvote.png',
         link: 'https://delightful-dusk-6d9f51.netlify.app/'
+    },
+    {
+        title: 'Reading List and Journal Builder',
+        subtitle: 'MERN Stack, Redux Toolkit, TailwindCSS',
+        description: 'An app for creating a personal reading list and book journal',
+        image: '../images/readingjournal.png',
+        link: 'https://mern-reading-journal-app-kari.herokuapp.com/'
     }
 ]
 
@@ -30,7 +37,9 @@ export const skills = [
     'Firebase',
     'Node.js',
     'Express',
-    'MongoDB'
+    'MongoDB',
+    'RESTful APIs',
+    'Redux Toolkit'
 ]
 
 export const blogposts = [
@@ -45,6 +54,12 @@ export const blogposts = [
         description: 'Some recommendations for designing a learning path for those considering a career in web development',
         image: '../images/blogpost2-cover-image.png',
         link: '/blogpost2'
+    },
+    {
+        title: 'Coding Games - A Way to Make Learning Fun',
+        description: 'A few free options to gamify learning and break up the tutorial monotony',
+        image: '../images/blogpost3-cover-image.png',
+        link: '/blogpost3'
     }
 ]
 

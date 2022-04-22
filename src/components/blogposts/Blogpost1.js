@@ -43,13 +43,14 @@ export default function Blogpost1() {
             
             <p className="mb-5 leading-7">
                 The rumors are also true - it is impossible to get fired from government work.  While this may seem like it could work in your favor, what it actually leads to is getting stuck working with the proverbial &apos;bad eggs&apos;.  A lot of them.  
-                And they are impossible to fire.  I don&apos;t think I really need to describe to you the type of toxic work environment that this leads to.  In fact, my job was toxic in every conceivable way.  I was handling toxic chemicals in the literal sense 
-                and dealing with toxic people in the figurative sense.  I could go on about how horrible it was, but I will save that for my therapist.  As John Oliver would say… “Moving on…”.
+                And they are impossible to fire.  I don&apos;t think I really need to describe to you the type of toxic work environment that this leads to.  In fact, my job was toxic in more ways than one.  I was handling toxic chemicals in the literal sense 
+                and dealing with toxic people in the figurative sense.  Needless to say, I had many reasons to want to move on to something new.  I didn&apos;t want a career that caused me to feel so much negativity and cynicism.  I wanted a career that brought a 
+                sense of pride and accomplishment.
             </p>
             
             <p className="mb-5 leading-7">
                 My point of all of this is that I took this opportunity, this re-evaluation of my career, to decide that I could make a change.  The Great Resignation was really only a rumor at this point in time, but reading about that notion planted 
-                a little seed of thought.  Maybe I could pursue a new career?  It would be tough but worth it to regain my mental health.  
+                a little seed of thought.  Maybe I could pursue a new career?  It would be tough but worth it to regain a sense of having value in my career.  
             </p>
             <div className="flex items-center">
                 
