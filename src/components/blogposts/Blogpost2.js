@@ -18,8 +18,8 @@ export default function Blogpost2() {
             </div>
 
             <TwitterShareButton
-                title={"5 Things I Wish I Knew Before Quitting My Job to Get a CS Degree"}
-                url={'https://www.karicheslock.com/blogpost1'}
+                title={"A Beginner's Learning Path to Becoming a Web Developer"}
+                url={'https://www.karicheslock.com/blogpost2'}
                 className='flex'
             >
                 <TwitterIcon size={20} borderRadius={10} className='mb-6 mr-2' />
