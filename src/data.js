@@ -26,6 +26,13 @@ export const projects = [
         description: 'An app for creating a personal reading list and book journal',
         image: '../images/readingjournal.png',
         link: 'https://mern-reading-journal-app-kari.herokuapp.com/'
+    },
+    {
+        title: 'Personal Task Manager',
+        subtitle: 'MERN Stack, Redux Toolkit, TailwindCSS, conditional rendering',
+        description: 'An app for creating a personal to-do list with conditional rendering based on task progress',
+        image: '../images/taskmanager.png',
+        link: 'https://task-manager-app-kari.herokuapp.com/'
     }
 ]
 
