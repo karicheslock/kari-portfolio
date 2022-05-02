@@ -67,6 +67,12 @@ export const blogposts = [
         description: 'A few free options to gamify learning and break up the tutorial monotony',
         image: '../images/blogpost3-cover-image.png',
         link: '/blogpost3'
+    },
+    {
+        title: 'MERN Stack CRUD Tutorial using Redux Toolkit and TailwindCSS - Build a Task Manager App',
+        description: 'A step-by-step tutorial to create a MERN Stack app from scratch',
+        image: '../images/blogpost4-cover-image.png',
+        link: '/blogpost4'
     }
 ]
 
