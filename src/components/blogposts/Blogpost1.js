@@ -23,6 +23,10 @@ export default function Blogpost1() {
                         <p className="text-sm">Tweet this article</p>
                     </TwitterShareButton>
 
+                    <div className="flex">
+                        <Link to='/subscribe' className="text-white bg-blue-500 rounded px-2 hover:text-lg" target='_blank'>Subscribe</Link> <p className="pl-1 whitespace-nowrap">to this blog to receive future updates!</p>
+                    </div>
+
                 </div>
                 <img src="../images/blogpost1-computer.jpg" alt='A person typing at a computer' className="w-1/2 h-48 rounded"></img>
             </div>
@@ -138,6 +142,7 @@ export default function Blogpost1() {
                 Please send me a <Link to="/#contact" alt='Send me a message' target='_blank' className="text-blue-500 hover:text-blue-800">message 📨</Link> if you liked what I had to say or connect with me on
                 <a href='https://www.linkedin.com/in/karicheslock/' alt='Kari LinkedIn Profile' className="text-blue-500 hover:text-blue-700"> LinkedIn <LinkedInIcon /></a>.
             </p>
+            <p className="mb-5 leading-7">Also, don&apos;t forget to <Link to='/subscribe' className="text-white bg-blue-500 rounded px-2 hover:text-lg" target='_blank'>Subscribe</Link> to this blog to receive future updates!</p>
            
             <p className="mb-5 font-bold text-rose-700">Happy Coding!</p>
             

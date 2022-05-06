@@ -26,6 +26,10 @@ export default function Blogpost2() {
                 <p className="text-sm">Tweet this article</p>
             </TwitterShareButton>
 
+            <div className="flex mb-4">
+                <Link to='/subscribe' className="text-white bg-blue-500 rounded px-2 hover:text-lg" target='_blank'>Subscribe</Link> <p className="pl-1 whitespace-nowrap">to this blog to receive future updates!</p>
+            </div>
+
             <p className="mb-5 leading-7">
             Becoming a web developer can seem like an incredibly daunting task, especially if you are a beginner with little experience under your belt and not much in your coding toolbox other than a lot of ambition.  When I set out on this new career 
             path about a year and a half ago, I had never written a single line of code.  But I had a lot of determination and a strong desire to succeed at something new, so I dug my heels in and decided I had to just jump in and go for it, even facing 
@@ -146,6 +150,8 @@ export default function Blogpost2() {
                 Please send me a <Link to="/#contact" alt='Send me a message' target='_blank' className="text-blue-500 hover:text-blue-800">message 📨</Link> if you liked what I had to say or connect with me on
                 <a href='https://www.linkedin.com/in/karicheslock/' alt='Kari LinkedIn Profile' className="text-blue-500 hover:text-blue-700"> LinkedIn <LinkedInIcon /></a>.
             </p>
+
+            <p className="mb-5 leading-7">Also, don&apos;t forget to <Link to='/subscribe' className="text-white bg-blue-500 rounded px-2 hover:text-lg" target='_blank'>Subscribe</Link> to this blog to receive future updates!</p>
            
             <p className="mb-5 font-bold text-rose-700">Happy Coding!</p>
             
