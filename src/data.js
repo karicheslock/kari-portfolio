@@ -33,6 +33,13 @@ export const projects = [
         description: 'An app for creating a personal to-do list with conditional rendering based on task progress',
         image: '../images/taskmanager.png',
         link: 'https://task-manager-app-kari.herokuapp.com/'
+    },
+    {
+        title: 'Custom Comment Section',
+        subtitle: 'React, Firebase, TailwindCSS',
+        description: 'An app for creating a custom comment section that can be added to a website or blog',
+        image: '../images/comment-section.png',
+        link: 'https://master--mellow-malasada-149b28.netlify.app/'
     }
 ]
 
