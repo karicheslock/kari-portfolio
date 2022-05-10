@@ -1,12 +1,37 @@
-import React from "react";
+import {useState, useEffect} from "react";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { Link } from 'react-router-dom';
 import { TwitterIcon, TwitterShareButton } from 'react-share';
+import Comments from '../comment-section/comments/Comments';
+import {auth, provider} from '../../firebase-config';
+import {signInWithPopup, signOut} from 'firebase/auth';
 import Gist from 'react-gist';
 
 function Blogpost4() {
 
+    const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
+    const [userId, setUserId] = useState('');
+
+    const signInWithGoogle = () => {
+            signInWithPopup(auth, provider).then((result) => {
+            localStorage.setItem("isAuth", true);
+            setIsAuth(true);
+        });
+    };
     
+    const signUserOut = () => {
+        signOut(auth).then(() => {
+        localStorage.clear();
+        setIsAuth(false);
+        });
+    };
+
+    useEffect(() => {
+        if (isAuth) {
+            setUserId(auth.currentUser.uid)
+        }   
+    }, [isAuth]);
+
   return (
     <div className="container flex flex-col justify-center max-w-4xl m-auto bg-neutral-50 text-stone-600 p-10">
         <div className="flex mb-4">
@@ -256,7 +281,7 @@ function Blogpost4() {
         a huge self high-five ✋👏.</p>
 
         <p className="mb-5 leading-7">
-            So that's it!  I hope you had fun learning the MERN Stack.  Please send me a <Link to="/#contact" alt='Send me a message' target='_blank' className="text-blue-500 hover:text-blue-800">message 📨</Link> if you liked what I had to say or connect with me on
+            So that's it!  I hope you had fun learning the MERN Stack.  Please comment below 👇 or send me a <Link to="/#contact" alt='Send me a message' target='_blank' className="text-blue-500 hover:text-blue-800">message 📨</Link> if you liked what I had to say.  You can also connect with me on
             <a href='https://www.linkedin.com/in/karicheslock/' alt='Kari LinkedIn Profile' className="text-blue-500 hover:text-blue-700"> LinkedIn <LinkedInIcon /></a>.
         </p>
 
@@ -266,6 +291,15 @@ function Blogpost4() {
         
         <p className="mb-5">Kari</p>
         <hr className="mb-5 border-2 border-gray-400" />
+
+        <div className='container flex flex-col ml-2 mt-2 max-w-7xl justify-center'>
+            <p className='mb-2'>Sign in with Google to add a comment</p>
+            <div className='flex flex-col w-1/3'>
+                <button className="login-with-google-btn" onClick={ signInWithGoogle }>Sign in with Google</button>
+                {isAuth && <button className='bg-red-400 text-white mt-2 rounded w-1/3 text-xs' onClick={signUserOut}>Sign Out</button>}
+            </div>
+            <Comments currentUserId={userId} />
+        </div>
 
     </div>
   )
