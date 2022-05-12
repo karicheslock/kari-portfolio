@@ -32,6 +32,7 @@ export default function Blogpost5() {
         }   
     }, [isAuth]);
 
+
     return (
         <div className="container flex flex-col justify-center max-w-4xl m-auto bg-neutral-50 text-stone-600 p-10">
             <div>
