@@ -80,6 +80,12 @@ export const blogposts = [
         description: 'A step-by-step tutorial to create a MERN Stack app from scratch',
         image: '../images/blogpost4-cover-image.png',
         link: '/blogpost4'
+    },
+    {
+        title: 'How to Build a Custom Comment Section for a Blog or Website using React, TailwindCSS, and Firebase',
+        description: 'A step-by-step tutorial to create a custom comment section with React and TailwindCSS on the frontend and Firebase on the backend',
+        image: '../images/blogpost5-cover-image.png',
+        link: '/blogpost5'
     }
 ]
 
