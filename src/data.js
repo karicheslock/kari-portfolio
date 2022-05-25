@@ -40,6 +40,13 @@ export const projects = [
         description: 'An app for creating a custom comment section that can be added to a website or blog',
         image: '../images/comment-section.png',
         link: 'https://master--mellow-malasada-149b28.netlify.app/'
+    },
+    {
+        title: 'A Website for an Author',
+        subtitle: 'React, TailwindCSS, Printable Components',
+        description: 'A website for an author with multiple links and printable components',
+        image: '../images/author-website.png',
+        link: 'https://www.ckbrandywine.com/'
     }
 ]
 
