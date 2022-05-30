@@ -93,6 +93,12 @@ export const blogposts = [
         description: 'A step-by-step tutorial to create a custom comment section with React and TailwindCSS on the frontend and Firebase on the backend',
         image: '../images/blogpost5-cover-image.png',
         link: '/blogpost5'
+    },
+    {
+        title: 'How to Create a Printable Component in React using react-to-print',
+        description: 'A simple example of using the npm package react-to-print to print a component to pdf',
+        image: '../images/blogpost6-cover-image.png',
+        link: '/blogpost6'
     }
 ]
 
