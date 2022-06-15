@@ -168,7 +168,7 @@ function Blogpost7() {
             form with a corresponding piece of state for each input.  The function for submitting the Signup form will check to see if the username or email address that the user is inputting already exists in the database and will throw an error if it does.  The login 
             form is very similar to the signup form, just with fewer input fields.  The login form also has a link to send an email to reset the user&apos;s password if they click it.  The user must enter an email address and then the reset email will be sent.  Finally, 
             there is a lot of conditional rendering here to display various messages such as error messages or email sent messages.</p>
-            <p className="mb-5 leading-7">And that&apos;s it!  You should now be able to create a user database and authenticate users in Firebase.  This code should be adaptable to any app you are trying to build.  Be sure to include the endpoint when you are testing this app.  
+            <p className="mb-5 leading-7">And that&apos;s it!  You should now be able to create a user database and authenticate users in Firebase.  This code should be adaptable to any app you are trying to build.  Be sure to check your endpoints when you are testing this app.  
             A next step would be to create your routes such that the user is directed to the signup, dashboard or login pages based on whether they are already authenticated.</p>
             <img src="../images/blogpost7images/signup.png" alt="Signup screen" className="mb-4 w-full border-4 rounded mx-auto" />
             <img src="../images/blogpost7images/login.png" alt="Login screen" className="mb-4 w-full border-4 rounded mx-auto" />
