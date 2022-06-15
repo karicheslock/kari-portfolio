@@ -7,6 +7,7 @@ import {auth, provider} from '../../firebase-config';
 import {signInWithPopup, signOut} from 'firebase/auth';
 import Gist from 'react-gist';
 import Blogpost6PrintableComponent from "./Blogpost6PrintableComponent";
+import {Adsense} from '@ctrl/react-adsense';
 
 function Blogpost6() {
     const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
@@ -44,7 +45,7 @@ function Blogpost6() {
                     <div className='font-bold text-sky-900 mb-10 pr-2 text-2xl'>How to Create a Printable Component in React using react-to-print</div>
                         <div className='text-sm text-sky-700 font-bold mb-2'>By Kari Cheslock</div>
                         <div className='text-sm text-sky-700'>May 30, 2022</div>
-                        <div className='text-sm text-gray-500 mb-4'>5 min read</div>
+                        <div className='text-sm text-gray-500 mb-4'>1 min read</div>
                     </div>
                     <img src="../images/blogpost6images/printer.jpg" alt='A printer' className="w-1/3 h-48 rounded"></img>
                 </div>
@@ -93,6 +94,10 @@ function Blogpost6() {
             
             <p className="mb-5">Kari</p>
             <hr className="mb-5 border-2 border-gray-400" />
+            <Adsense
+                client='ca-pub-7831705014229923'
+                slot='2895656225'
+            />
 
             </div>
             <div className='container flex flex-col ml-2 mt-2 max-w-7xl justify-center'>

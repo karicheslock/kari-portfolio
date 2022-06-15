@@ -99,6 +99,12 @@ export const blogposts = [
         description: 'A simple example of using the npm package react-to-print to print a component to pdf',
         image: '../images/blogpost6-cover-image.png',
         link: '/blogpost6'
+    },
+    {
+        title: 'User Authentication in Firebase with React',
+        description: 'Signin with Google, Sign in with Email and Password, Send Password Reset Email, and Signout',
+        image: '../images/blogpost7-cover-image.png',
+        link: '/blogpost7'
     }
 ]
 

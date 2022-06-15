@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar';
 import Projects from '../components/Projects';
 import Skills from '../components/Skills';
 import Blogposts from '../components/Blogposts';
+import {Adsense} from '@ctrl/react-adsense';
 
 function Dashboard() {
   return (
@@ -15,6 +16,10 @@ function Dashboard() {
       <Skills />
       <Blogposts />
       <Contact />
+      <Adsense
+        client='ca-pub-7831705014229923'
+        slot='2895656225'
+      />
     </main>
   )
 }
