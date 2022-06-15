@@ -47,6 +47,13 @@ export const projects = [
         description: 'A website for an author with multiple links and printable components',
         image: '../images/author-website.png',
         link: 'https://www.ckbrandywine.com/'
+    },
+    {
+        title: 'A Mini App for User Authentication in Firebase',
+        subtitle: 'React, TailwindCSS, Firebase',
+        description: 'An app that demonstrates building a database of users in Firebase and authenticating those users with Firebase queries.  Password reset option included.',
+        image: '../images/user-auth.png',
+        link: 'https://fantastic-palmier-0a4b2c.netlify.app/'
     }
 ]
 
