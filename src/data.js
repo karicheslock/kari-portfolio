@@ -54,6 +54,13 @@ export const projects = [
         description: 'An app that demonstrates building a database of users in Firebase and authenticating those users with Firebase queries.  Password reset option included.',
         image: '../images/user-auth.png',
         link: 'https://fantastic-palmier-0a4b2c.netlify.app/'
+    },
+    {
+        title: 'An App for Displaying a Collection of Images Uploaded by the User',
+        subtitle: 'React, TailwindCSS, Firebase Database, Firebase Cloud Storage',
+        description: 'An app that allows a user to upload a set of images and display them.  The images are stored in cloud storage and the URL that references the image is stored in the database.',
+        image: '../images/blogpost8images/completed-project.png',
+        link: 'https://shiny-paprenjak-6545ec.netlify.app/'
     }
 ]
 
@@ -112,6 +119,12 @@ export const blogposts = [
         description: 'Signin with Google, Sign in with Email and Password, Send Password Reset Email, and Signout',
         image: '../images/blogpost7-cover-image.png',
         link: '/blogpost7'
+    },
+    {
+        title: 'Storing and Retrieving Images Using Firebase Cloud Storage',
+        description: 'User Firebase Cloud Storage to quickly download and display images on your website',
+        image: '../images/blogpost8-cover-image.png',
+        link: '/blogpost8'
     }
 ]
 
