@@ -25,11 +25,11 @@ function Blogpost9() {
         });
     };
 
-    //  useEffect(() => {
-    //      if (isAuth) {
-    //          setUserId(auth.currentUser.uid)
-    //      }   
-    //  }, [isAuth]);
+      useEffect(() => {
+          if (isAuth) {
+              setUserId(auth.currentUser.uid)
+         }   
+      }, [isAuth]);
 
 
     return (
@@ -95,7 +95,7 @@ function Blogpost9() {
                     <button className="login-with-google-btn" onClick={ signInWithGoogle }>Sign in with Google</button>
                     {isAuth && <button className='bg-red-400 text-white mt-2 rounded w-1/3 text-xs' onClick={signUserOut}>Sign Out</button>}
                 </div>
-                {/* <Comments currentUserId={userId} /> */}
+                <Comments currentUserId={userId} />
             </div>
             
           
