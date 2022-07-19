@@ -10,6 +10,7 @@ import Blogpost5 from './components/blogposts/Blogpost5';
 import Blogpost6 from './components/blogposts/Blogpost6';
 import Blogpost7 from './components/blogposts/Blogpost7';
 import Blogpost8 from './components/blogposts/Blogpost8';
+import Blogpost9 from './components/blogposts/Blogpost9';
 import MailchimpFormContainer from './components/blogposts/MailchimpFormContainer';
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Route path='/blogpost6' element={<Blogpost6 />} />
         <Route path='/blogpost7' element={<Blogpost7 />} />
         <Route path='/blogpost8' element={<Blogpost8 />} />
+        <Route path='/blogpost9' element={<Blogpost9 />} /> 
         <Route path='/subscribe' element={<MailchimpFormContainer />} />
       </Routes>
     </Router>

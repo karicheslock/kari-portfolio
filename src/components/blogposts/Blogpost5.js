@@ -6,7 +6,6 @@ import Comments from '../comment-section/comments/Comments';
 import {auth, provider} from '../../firebase-config';
 import {signInWithPopup, signOut} from 'firebase/auth';
 import Gist from 'react-gist';
-import {Adsense} from '@ctrl/react-adsense';
 
 export default function Blogpost5() {
 
@@ -172,10 +171,6 @@ export default function Blogpost5() {
             
             <p className="mb-5">Kari</p>
             <hr className="mb-5 border-2 border-gray-400" />
-            <Adsense
-                client='ca-pub-7831705014229923'
-                slot='2895656225'
-            />
 
             </div>
             <div className='container flex flex-col ml-2 mt-2 max-w-7xl justify-center'>

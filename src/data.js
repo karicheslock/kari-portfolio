@@ -122,9 +122,15 @@ export const blogposts = [
     },
     {
         title: 'Storing and Retrieving Images Using Firebase Cloud Storage',
-        description: 'User Firebase Cloud Storage to quickly download and display images on your website',
+        description: 'Use Firebase Cloud Storage to quickly download and display images on your website',
         image: '../images/blogpost8-cover-image.png',
         link: '/blogpost8'
+    },
+    {
+        title: 'Upvoting and Downvoting Posts Using React and Firebase',
+        description: 'Allow users to upvote or downvote posts using React with Firebase on the backend. Votes are tallied and displayed.',
+        image: '../images/blogpost9-cover-image.png',
+        link: '/blogpost9'
     }
 ]
 

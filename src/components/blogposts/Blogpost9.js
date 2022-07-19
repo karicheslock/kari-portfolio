@@ -6,9 +6,8 @@ import Comments from '../comment-section/comments/Comments';
 import {auth, provider} from '../../firebase-config';
 import {signInWithPopup, signOut} from 'firebase/auth';
 import Gist from 'react-gist';
-import Blogpost6PrintableComponent from "./Blogpost6PrintableComponent";
 
-function Blogpost6() {
+function Blogpost9() {
     const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
     const [userId, setUserId] = useState('');
 
@@ -26,11 +25,11 @@ function Blogpost6() {
         });
     };
 
-    useEffect(() => {
-        if (isAuth) {
-            setUserId(auth.currentUser.uid)
-        }   
-    }, [isAuth]);
+    //  useEffect(() => {
+    //      if (isAuth) {
+    //          setUserId(auth.currentUser.uid)
+    //      }   
+    //  }, [isAuth]);
 
 
     return (
@@ -41,18 +40,18 @@ function Blogpost6() {
                 
                 <div className="flex justify-between">
                     <div>
-                    <div className='font-bold text-sky-900 mb-10 pr-2 text-2xl'>How to Create a Printable Component in React using react-to-print</div>
+                        <div className='font-bold text-sky-900 mb-10 pr-2 text-2xl'>Upvoting and Downvoting Posts Using React and Firebase</div>
                         <div className='text-sm text-sky-700 font-bold mb-2'>By Kari Cheslock</div>
-                        <div className='text-sm text-sky-700'>May 30, 2022</div>
-                        <div className='text-sm text-gray-500 mb-4'>1 min read</div>
+                        <div className='text-sm text-sky-700'>July 15, 2022</div>
+                        <div className='text-sm text-gray-500 mb-4'>5 min read</div>
                     </div>
-                    <img src="../images/blogpost6images/printer.jpg" alt='A printer' className="w-1/3 h-48 rounded"></img>
+                    <img src="../images/blogpost9images/upvote-downvote.png" alt='Thumbs up and thumbs down emojis' className="w-1/4 h-48 rounded pl-20"></img>
                 </div>
                     
         
                     <TwitterShareButton
-                        title={"How to Create a Printable Component in React using react-to-print"}
-                        url={'https://www.karicheslock.com/blogpost6'}
+                        title={"Upvoting and Downvoting Posts Using React and Firebase"}
+                        url={'https://www.karicheslock.com/blogpost9'}
                         className='flex'
                     >
                         <TwitterIcon size={20} borderRadius={10} className='mb-4 mr-2' />
@@ -68,21 +67,16 @@ function Blogpost6() {
             </div>
             
             <p className="mb-4 font-bold text-rose-700">Hello, Happy Coders!</p>
-            <p className="mb-5 leading-7">In this post I'm going to show you how to create a simple printable component that can be added to any website.  The react-to-print package will create a pdf of any component.  There are just a few tricks and tips for using it  
-            that I will show you here.</p>
-            <p className="mb-5 leading-7">The first step is to install the react-to-print package using <code className="bg-gray-200">npm install react-to-print</code> or <code className="bg-gray-200">yarn install react-to-print</code>.</p>
-            <p className="mb-5 leading-7">Next you will need to create a new component for your printable element.  I have created an example printable component below that will print an image.</p>
-            <Gist id="3c0e884cc575a7affb795f87ef70baa3" />
-            <p className="mt-5 mb-5 leading-7">There are a couple of things to note here.</p>
-            <p className="mb-5 leading-7">First of all, we are using the React hook useRef to reference our component.  This reference is used in the ReactToPrint component that we are importing from the react-to-print package.</p>
-            <p className="mb-5 leading-7">You will also see that I have created a button with some styling inside the ReactToPrint component.  I styled this button using TailwindCSS classes, but you can use whatever you want.</p>
-            <p className="mb-5 leading-7">Finally, I added the component I want print in a <span className="italic">div</span> element below the ReactToPrint element.  I would recommend keeping the <span className="italic">style</span> tag when you are creating 
-            your own elements.  This will allow you to switch between portrait and landscape for your print page orientation.  Again, I styled the <span className="italic">div</span> containing the image with TailwindCSS classes.</p>
-            <p className="mb-5 leading-7">Note the componentRef that is used throughout to create the component.  Using this ref is how I have been able to get the react-to-print package to work effectively.</p>
-            <p className="mb-5 leading-7">And that's all there is to it!  Now, all you need to do is import the component you created, and it will be ready to go.  I have imported the component I just created below.  &#40;Yes, that is a picture of my two 
-            adorable rescue dogs 😀.&#41;</p>
-            <p className="mb-5 leading-7">You will see if you click the button that you can now print this image to pdf.</p>
-            <Blogpost6PrintableComponent />
+            <p className="mb-5 leading-7">A popular feature of many social media apps such as Reddit and others is the ability for the user to upvote or downvote a post based on whether or not they like it.  This can be a tricky feature to add in your own project, so today 
+            I&apos;m going to show you a simple and efficient way to add this feature to a web application using React on the frontend and Firebase on the backend.  We will also be using TailwindCSS for styling, so I will walk through that as well.  If you have been reading 
+            my other blogposts, you should be quite familiar with this process by now.</p>
+            <p className="mb-5 leading-7">Without further ado, let&apos;s get started.</p>
+            <p className="mb-5 leading-7">The first step is to create a new project in <a href="https://console.firebase.google.com/" target="_blank" rel="noreferrer" className="text-blue-500 font-bold hover:text-yellow-400">Firebase</a>.</p>
+            <p className="mb-5 leading-7">Go to the Firebase Console and click Add Project.</p>
+            <img src="../images/blogpost5images/firebase-add-new-project.png" alt="Firebase add project screen" className="mb-4 w-1/2 h-1/2 rounded mx-auto" />
+            
+            <p className="text-5xl">The rest of this post is coming soon!!</p>
+            
             <p className="mb-5 mt-5 leading-7">
                 Please comment below 👇 or send me a <Link to="/#contact" alt='Send me a message' target='_blank' className="text-blue-500 hover:text-blue-800">message 📨</Link> if you liked this post.  You can also connect with me on
                 <a href='https://www.linkedin.com/in/karicheslock/' alt='Kari LinkedIn Profile' className="text-blue-500 hover:text-blue-700"> LinkedIn <LinkedInIcon /></a>.
@@ -101,7 +95,7 @@ function Blogpost6() {
                     <button className="login-with-google-btn" onClick={ signInWithGoogle }>Sign in with Google</button>
                     {isAuth && <button className='bg-red-400 text-white mt-2 rounded w-1/3 text-xs' onClick={signUserOut}>Sign Out</button>}
                 </div>
-                <Comments currentUserId={userId} />
+                {/* <Comments currentUserId={userId} /> */}
             </div>
             
           
@@ -111,4 +105,4 @@ function Blogpost6() {
     )
 }
 
-export default Blogpost6;
+export default Blogpost9;
