@@ -5,7 +5,7 @@ import { TwitterIcon, TwitterShareButton } from 'react-share';
 import Comments from '../comment-section/comments/Comments';
 import {auth, provider} from '../../firebase-config';
 import {signInWithPopup, signOut} from 'firebase/auth';
-import Gist from 'react-gist';
+//mport Gist from 'react-gist';
 
 function Blogpost9() {
     const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
