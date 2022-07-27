@@ -134,11 +134,11 @@ function Blogpost8() {
             <img src="../images/blogpost8images/firebase-start-collection.png" alt="Firebase start collection screen" className="mb-4 w-2/3 h-1/2 rounded mx-auto" />
             <p className="mb-5 leading-7">Add the name of the collection which will be &apos;userCollections&apos; and click Next.</p>
             <img src="../images/blogpost8images/firebase-userscollections.png" alt="Firebase name collection screen" className="mb-4 w-2/3 h-1/2 rounded mx-auto" />
-            <p className="mb-5 leading-7">On the next screen, click the button for Auto Id to enable the Save button and then click Save.  You should now have a &apos;users&apos; collection with an empty document in it.</p>
+            <p className="mb-5 leading-7">On the next screen, click the button for Auto Id to enable the Save button and then click Save.  You should now have a &apos;userCollections&apos; collection with an empty document in it.</p>
             <img src="../images/blogpost8images/firebase-collections-auto-id.png" alt="Firebase selection location screen" className="mb-4 w-2/3 h-1/2 rounded mx-auto" />
             <p className="mb-5 leading-7">Next we need to edit the rules for our database and for our cloud storage.  For the database, click on the Rules tab in the upper left of the screen and then change the read,write rule from false to what is shown below.  Be sure to click Publish when you are done.</p>
             <img src="../images/blogpost8images/firebase-database-rules.png" alt="Firebase database rules screen" className="mb-4 w-full rounded mx-auto" />
-            <p className="mb-5 mt-5 leading-7">Now go to the cloud storage by clicking on Storage under the Build menu on the left.  You will find a Rules tab here also in the upper left.  This time you will just change the read,write rules from false to true as shown below.  Don&aos;t forget to Publish the rules when you are done.</p>
+            <p className="mb-5 mt-5 leading-7">Now go to the cloud storage by clicking on Storage under the Build menu on the left.  You will find a Rules tab here also in the upper left.  This time you will just change the read,write rules from false to true as shown below.  Don&apos;t forget to Publish the rules when you are done.</p>
             <img src="../images/blogpost8images/firebase-storage-rules.png" alt="Firebase storage rules screen" className="mb-4 w-full rounded mx-auto" />
             <p className="mb-5 mt-5 leading-7">Ok, we are finally ready to add the code to our app.</p>
             <p className="mb-5 leading-7">To begin, we will set up our routes in the <span className="bg-gray-200 italic px-2">App.js</span> file to establish the routes for all of our internal web pages.  Here is the code for that.</p>
