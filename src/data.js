@@ -61,6 +61,13 @@ export const projects = [
         description: 'An app that allows a user to upload a set of images and display them.  The images are stored in cloud storage and the URL that references the image is stored in the database.',
         image: '../images/blogpost8images/completed-project.png',
         link: 'https://shiny-paprenjak-6545ec.netlify.app/'
+    },
+    {
+        title: 'An App for Upvoting and Downvoting Posts using a Toggle Button',
+        subtitle: 'React, TailwindCSS, Firebase Database, Firebase Authentication',
+        description: 'An app that allows a user to upvote or downvote a post.  The user can toggle their vote but can only upvote or downvote, not both.  Votes are tallied and displayed.',
+        image: '../images/blogpost9images/Dashboard.png',
+        link: 'https://chipper-sopapillas-9040cc.netlify.app/'
     }
 ]
 
